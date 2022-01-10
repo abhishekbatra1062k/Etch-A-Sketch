@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href='./index.css' />
+    <link rel="shortcut icon" href="./images/favicon.ico" />
+    <script src="./index.js" defer></script>
+</head>
+<body>
+    <div class="header">
+        <h1>ETCH-A-SKETCH</h1>
+    </div>
+    <div class="content">
+        <div class="btns-container">
+            <button class="btn" id="random">Rainbow</button>
+            <button class="btn" id="clear">Clear</button>
+            <button class="btn" id="eraser">Eraser</button>
+        </div>
+        <div class="container"></div>
+        <div class="inputs-container">
+            <div>
+                <label id="size" for="pixel-size">Customize Pixel Size 20</label><br /><br />
+                <input class="slider" id="pixel-size" type="range" min='5' max='100' name="pixel-size" step="5" value='20'>
+            </div>
+            <div>
+                <label for="color-picker">Color-Picker</label><br /><br />
+                <input id="color-picker" type="color" name="color-picker">
+            </div>
+        </div>
+        
+    </div>
+    <div class="footer">
+        <h3>Created By <a href="https://github.com/abhishekbatra1062k">Abhishek Batra</a></h3>
+    </div>
+</body>
+</html>

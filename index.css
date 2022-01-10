@@ -1,0 +1,138 @@
+
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top,darkslategray, lightcyan, darkslategray);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header{    
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 30px;
+    color: lightcyan;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.inputs-container, .btns-container{
+    display: flex;
+    flex-direction: column;
+    margin: 100px;
+    gap: 70px;
+    align-content: center;
+    justify-content: center;
+}
+
+.btn{
+    padding: 10px;
+    border-radius: 0.75rem;
+    font-size: 20px;
+    color: lightcyan;
+    background: rgba(47, 79, 79, 0.85);
+    transition: 0.25s;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+    background: lightcyan;
+    color: rgba(47, 79, 79, 0.85);;
+}
+
+label{
+    padding: 10px;
+    font-size: 20px;
+    color: lightcyan;
+    background-color: darkslategray;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 250px;
+    height: 25px;
+    background: lightcyan;
+    border: 2px solid darkslategrey;
+    outline: none;
+    opacity: 0.85;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+.slider:hover {
+    opacity: 1;
+}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: darkslategray;
+    border: 2px solid lightcyan;
+    cursor: pointer;
+}
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: lightcyan;
+    cursor: pointer;
+}
+
+#color-picker{
+	width: 60px;
+	height: 60px;
+	border: none;
+	border-radius: 40px;
+	background: none;
+}
+#color-picker::-webkit-color-swatch-wrapper {
+	padding: 0;
+}
+#color-picker::-webkit-color-swatch {
+	border: solid 1px #000;
+	border-radius: 50%;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 560px;
+    height: 560px;
+    border: 10px solid rgba(47, 79, 79, 0.95);
+    border-radius: 0.5rem;
+    margin: auto;
+    background-color: white;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.pixel{
+    background-color: white;
+    transition: 0.5s;
+}
+
+.footer{
+    color: lightcyan;
+    font-size: 20px;
+}
+.footer a{
+    text-decoration: overline;
+    text-decoration-color: lightcyan;
+    color: lightyellow;
+}
